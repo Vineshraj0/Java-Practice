@@ -1,5 +1,5 @@
 import java.util.*;
-
+//This program is to find count of repeated characters
 public class countuniquechar{
 
 		public static void main(String args[])
@@ -13,6 +13,7 @@ public class countuniquechar{
 			System.out.println("The string is: "+name);
 			System.out.println("Length of string is: "+n);
 			int i;
+			int tempcount=0;
 			for(i=0;i<n;i++)
 			{
 				temp[i]=name.charAt(i);
@@ -20,20 +21,29 @@ public class countuniquechar{
 			int j,count=0;
 			for(i=0;i<n;i++)
 			{
+				count=1;
 				for(j=i+1;j<n;j++)
 				{
 					if(temp[i]==temp[j])
 					{
 						count++;
+						temp[j]='0';
 					}
 					
 				}
+				
+				if(count>1 && temp[i]!='0')
+				{
+					tempcount++;
+					
+					System.out.println(temp[i]);
+				}
 			}
+			//int uniq;
+			//uniq=n-tempcount;
+			System.out.println("Number of repeated characters: "+tempcount);
 			
-			System.out.println("Number of repeated characters: "+count);
-			int uniq;
-			uniq=n-count;
-			System.out.println("Number of unique characters: "+ uniq);
+			//System.out.println("Number of unique characters: "+ uniq);
 			
 			
 			
