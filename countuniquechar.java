@@ -18,7 +18,7 @@ public class countuniquechar{
 			{
 				temp[i]=name.charAt(i);
 			}
-			int j,count=0;
+			int j,count=0,zcount=0;
 			for(i=0;i<n;i++)
 			{
 				count=1;
@@ -31,7 +31,10 @@ public class countuniquechar{
 					}
 					
 				}
-				
+				if(temp[i]=='0')
+				{
+					zcount++;
+				}
 				if(count>1 && temp[i]!='0')
 				{
 					tempcount++;
@@ -42,8 +45,9 @@ public class countuniquechar{
 			//int uniq;
 			//uniq=n-tempcount;
 			System.out.println("Number of repeated characters: "+tempcount);
-			
-			//System.out.println("Number of unique characters: "+ uniq);
+			int uniq;
+			uniq=n-tempcount-zcount;
+			System.out.println("Number of unique characters: "+ uniq);
 			
 			
 			
