@@ -1,13 +1,16 @@
 import java.util.*;
 
-public static palindrome{
-public static void mian(String args[]){
+public class palindrome{
+public static void main(String args[]){
 Scanner sc=new Scanner(System.in);
-int n,i,flag;
-System.out.print("Enter a number: ");
-n=sc.nextInt();
+int n,i,flag,n1,n2;
+System.out.println("Enter the limits: ");
+n1=sc.nextInt();
+n2=sc.nextInt();
+for(n=n1;n<n2;n++)
+{
 flag=0;
-for(i=0;i<n/2;i++)
+for(i=2;i<n/2;i++)
 {
 	if(n%i==0)
 	{
@@ -23,5 +26,6 @@ if(flag==0)
 	System.out.println(n);
 
 
+}
 }
 }
