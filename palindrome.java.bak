@@ -1,0 +1,14 @@
+import java.util.*;
+
+public static palindrome{
+public static void mian(String args[]){
+Scanner sc=new Scanner(System.in);
+int n;
+System.out.print("Enter a number: ");
+n=sc.nextInt();
+
+
+
+
+}
+}
