@@ -4,8 +4,8 @@ public class palindrome{
 public static void main(String args[]){
 Scanner sc=new Scanner(System.in);
 int n,i,flag,n1,n2;
-System.out.println("Enter the limits: ");
-n1=sc.Int();
+System.out.print("Enter the limits: ");
+n1=sc.nextInt();
 n2=sc.nextInt();
 for(n=n1;n<n2;n++)
 {
